@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/Users/pierre-louisbenveniste/Documents/PRALG/1Exo_pointeurs/exoPRALG1/Matrice/build",
+  "command": "/usr/bin/clang++   -g -o CMakeFiles/matrice.dir/matrice.cpp.o -c /Users/pierre-louisbenveniste/Documents/PRALG/1Exo_pointeurs/exoPRALG1/Matrice/matrice.cpp",
+  "file": "/Users/pierre-louisbenveniste/Documents/PRALG/1Exo_pointeurs/exoPRALG1/Matrice/matrice.cpp",
+  "output": "CMakeFiles/matrice.dir/matrice.cpp.o"
+},
+{
+  "directory": "/Users/pierre-louisbenveniste/Documents/PRALG/1Exo_pointeurs/exoPRALG1/Matrice/build",
+  "command": "/usr/bin/clang++   -g -o CMakeFiles/matrice.dir/main.cpp.o -c /Users/pierre-louisbenveniste/Documents/PRALG/1Exo_pointeurs/exoPRALG1/Matrice/main.cpp",
+  "file": "/Users/pierre-louisbenveniste/Documents/PRALG/1Exo_pointeurs/exoPRALG1/Matrice/main.cpp",
+  "output": "CMakeFiles/matrice.dir/main.cpp.o"
+}
+]

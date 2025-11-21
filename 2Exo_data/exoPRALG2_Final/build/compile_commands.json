@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/Users/pierre-louisbenveniste/Documents/PRALG/2Exo_data/exoPRALG2_Final/build",
+  "command": "/usr/bin/clang++   -g -o CMakeFiles/tree.dir/inttree.cpp.o -c /Users/pierre-louisbenveniste/Documents/PRALG/2Exo_data/exoPRALG2_Final/inttree.cpp",
+  "file": "/Users/pierre-louisbenveniste/Documents/PRALG/2Exo_data/exoPRALG2_Final/inttree.cpp",
+  "output": "CMakeFiles/tree.dir/inttree.cpp.o"
+},
+{
+  "directory": "/Users/pierre-louisbenveniste/Documents/PRALG/2Exo_data/exoPRALG2_Final/build",
+  "command": "/usr/bin/clang++   -g -o CMakeFiles/tree.dir/main.cpp.o -c /Users/pierre-louisbenveniste/Documents/PRALG/2Exo_data/exoPRALG2_Final/main.cpp",
+  "file": "/Users/pierre-louisbenveniste/Documents/PRALG/2Exo_data/exoPRALG2_Final/main.cpp",
+  "output": "CMakeFiles/tree.dir/main.cpp.o"
+}
+]
