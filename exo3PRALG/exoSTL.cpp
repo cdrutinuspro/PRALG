@@ -16,7 +16,7 @@ struct Eleve {
 
 Eleve::Eleve() {
     nom.push_back('A'+rand()%26);
-    int len = 1+rand()%15;
+    int len = 1+rand()%10;
     for(int i=0; i<len; i++)
         nom.push_back('a'+rand()%26);
     note = rand() % 21;
