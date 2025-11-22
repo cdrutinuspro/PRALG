@@ -1,0 +1,22 @@
+# Projet de C++ : Charles Prévoteau
+
+# Copier/Coller le dossier et changer le nom des dossiers et des chemins dans CMakeLists
+
+# créer le fichier build
+
+mkdir build
+cd build
+cmake -G "MinGW Makefiles" ..
+mingw32-make
+./NOM_PROJET.exe
+
+# Ajouter "${workspaceFolder}/include" au path
+
+Pour que tous les fichiers header dans le dossier /include
+soient accessibles automatiquement avec #include :
+
+- Ouvrir VS Code.
+- Appuyer sur Ctrl + Shift + P.
+- Taper C/C++: Edit Configurations (JSON) et l'ouvrir.
+- Dans la section "includePath", ajouter : "${workspaceFolder}/include"
+- Sauvegarde le fichier.
