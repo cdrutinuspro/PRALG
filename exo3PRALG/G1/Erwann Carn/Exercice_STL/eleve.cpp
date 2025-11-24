@@ -1,4 +1,5 @@
 #include "eleve.h"
+#include <vector>
 
 Eleve::Eleve(string nom_el, int note_el){
     nom = nom_el;

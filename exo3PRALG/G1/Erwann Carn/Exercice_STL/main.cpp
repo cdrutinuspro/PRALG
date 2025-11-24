@@ -1,7 +1,7 @@
 #include "eleve.h"
 #include "comparateur.h"
 #include <iostream>
-#include <algorithm>
+// #include <algorithm>
 #include "affichage.h"
 #include "eleve.h"
 #include "comparateur.h"
@@ -23,7 +23,7 @@ int main(){
 
     auto vNote = v;
     compteur = 0;
-    CompareNote cmpNote{ &compteur; };
+    CompareNote cmpNote(&compteur);
     std::sort(vNote.begin(), vNote.end(), cmpNote);
     afficher(vNote, "Tri par note (décroissant)");
         std::cout << "Comparaisons (note): " << compteur << "\n";
