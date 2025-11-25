@@ -1,0 +1,73 @@
+\doxysection{Compare\+Nom Class Reference}
+\hypertarget{class_compare_nom}{}\label{class_compare_nom}\index{CompareNom@{CompareNom}}
+
+
+Foncteur de comparaison par nom (ordre alphabétique croissant).  
+
+
+
+
+{\ttfamily \#include $<$eleve.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_compare_nom_a503e00fc8cf312682b0329135d43bba4}{Compare\+Nom}} (int \texorpdfstring{$\ast$}{*}p=nullptr)
+\begin{DoxyCompactList}\small\item\em Construit un comparateur par nom. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_compare_nom_a61974f6cd4e31ba1d86d610611d312a7}{operator()}} (\mbox{\hyperlink{class_eleve}{Eleve}} e1, \mbox{\hyperlink{class_eleve}{Eleve}} e2)
+\begin{DoxyCompactList}\small\item\em Compare deux élèves par leur nom (ordre alphabétique croissant). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Foncteur de comparaison par nom (ordre alphabétique croissant). 
+
+Possède un pointeur vers un compteur de comparaisons qui est incrémenté à chaque appel de l\textquotesingle{}opérateur de comparaison. 
+
+\label{doc-constructors}
+\Hypertarget{class_compare_nom_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_compare_nom_a503e00fc8cf312682b0329135d43bba4}\index{CompareNom@{CompareNom}!CompareNom@{CompareNom}}
+\index{CompareNom@{CompareNom}!CompareNom@{CompareNom}}
+\doxysubsubsection{\texorpdfstring{CompareNom()}{CompareNom()}}
+{\footnotesize\ttfamily \label{class_compare_nom_a503e00fc8cf312682b0329135d43bba4} 
+Compare\+Nom\+::\+Compare\+Nom (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{p}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construit un comparateur par nom. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Pointeur vers un entier compteur (optionnel, peut valoir nullptr). \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_compare_nom_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_compare_nom_a61974f6cd4e31ba1d86d610611d312a7}\index{CompareNom@{CompareNom}!operator()@{operator()}}
+\index{operator()@{operator()}!CompareNom@{CompareNom}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily \label{class_compare_nom_a61974f6cd4e31ba1d86d610611d312a7} 
+bool Compare\+Nom\+::operator() (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_eleve}{Eleve}}}]{e1}{, }\item[{\mbox{\hyperlink{class_eleve}{Eleve}}}]{e2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Compare deux élèves par leur nom (ordre alphabétique croissant). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e1} & Premier élève. \\
+\hline
+{\em e2} & Second élève. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si e1 \texorpdfstring{$<$}{<} e2 selon le nom, false sinon.
+\end{DoxyReturn}
+Incrémente {\ttfamily \texorpdfstring{$\ast$}{*}ptr} si {\ttfamily ptr} n\textquotesingle{}est pas nul. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+eleve.\+h\end{DoxyCompactItemize}

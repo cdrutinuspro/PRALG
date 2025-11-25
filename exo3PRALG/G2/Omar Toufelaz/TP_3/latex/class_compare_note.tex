@@ -1,0 +1,73 @@
+\doxysection{Compare\+Note Class Reference}
+\hypertarget{class_compare_note}{}\label{class_compare_note}\index{CompareNote@{CompareNote}}
+
+
+Foncteur de comparaison par note (ordre décroissant).  
+
+
+
+
+{\ttfamily \#include $<$eleve.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_compare_note_add2ebb37961e3f904a669c29e94c2327}{Compare\+Note}} (int \texorpdfstring{$\ast$}{*}p=nullptr)
+\begin{DoxyCompactList}\small\item\em Construit un comparateur par note (décroissant). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_compare_note_a2e2bff69feeec5ad8dc04fd34e889895}{operator()}} (\mbox{\hyperlink{class_eleve}{Eleve}} e1, \mbox{\hyperlink{class_eleve}{Eleve}} e2)
+\begin{DoxyCompactList}\small\item\em Compare deux élèves par leur note (ordre décroissant). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Foncteur de comparaison par note (ordre décroissant). 
+
+Possède un pointeur vers un compteur de comparaisons qui est incrémenté à chaque appel de l\textquotesingle{}opérateur de comparaison. 
+
+\label{doc-constructors}
+\Hypertarget{class_compare_note_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_compare_note_add2ebb37961e3f904a669c29e94c2327}\index{CompareNote@{CompareNote}!CompareNote@{CompareNote}}
+\index{CompareNote@{CompareNote}!CompareNote@{CompareNote}}
+\doxysubsubsection{\texorpdfstring{CompareNote()}{CompareNote()}}
+{\footnotesize\ttfamily \label{class_compare_note_add2ebb37961e3f904a669c29e94c2327} 
+Compare\+Note\+::\+Compare\+Note (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{p}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construit un comparateur par note (décroissant). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Pointeur vers un entier compteur (optionnel, peut valoir nullptr). \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_compare_note_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_compare_note_a2e2bff69feeec5ad8dc04fd34e889895}\index{CompareNote@{CompareNote}!operator()@{operator()}}
+\index{operator()@{operator()}!CompareNote@{CompareNote}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily \label{class_compare_note_a2e2bff69feeec5ad8dc04fd34e889895} 
+bool Compare\+Note\+::operator() (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_eleve}{Eleve}}}]{e1}{, }\item[{\mbox{\hyperlink{class_eleve}{Eleve}}}]{e2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Compare deux élèves par leur note (ordre décroissant). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e1} & Premier élève. \\
+\hline
+{\em e2} & Second élève. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si note(e1) \texorpdfstring{$>$}{>} note(e2), false sinon.
+\end{DoxyReturn}
+Incrémente {\ttfamily \texorpdfstring{$\ast$}{*}ptr} si {\ttfamily ptr} n\textquotesingle{}est pas nul. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+eleve.\+h\end{DoxyCompactItemize}

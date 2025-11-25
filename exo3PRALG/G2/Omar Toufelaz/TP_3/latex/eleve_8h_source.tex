@@ -1,0 +1,57 @@
+\doxysection{eleve.\+h}
+\hypertarget{eleve_8h_source}{}\label{eleve_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ELEVE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ELEVE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ELEVE\_H}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <Imagine/Images.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <Imagine/Graphics.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{using\ namespace\ }Imagine;}
+\DoxyCodeLine{00010\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{comment}{//Question\ 1}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_eleve_ab58cf14e10d99f2d451cafbfecc43687}{Eleve}}\{}
+\DoxyCodeLine{00021\ \ \ \ \ std::string\ nom;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ note;}
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_eleve_ab58cf14e10d99f2d451cafbfecc43687}{Eleve}}(std::string\ name,\textcolor{keywordtype}{int}\ grade);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_eleve_a03b259b0cb457c1ab43e52730af8ebdc}{SetNote}}(\textcolor{keywordtype}{int}\ grade);}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_eleve_a7505567591d82246f9fe8c0281fd81a3}{GetNote}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00046\ \ \ \ \ std::string\ \mbox{\hyperlink{class_eleve_ac350cce0072485d7424675914851b415}{GetNom}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00047\ \};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{comment}{//Question\ 3}}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00058\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_compare_nom_a503e00fc8cf312682b0329135d43bba4}{CompareNom}}\{}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{int}*\ ptr;}
+\DoxyCodeLine{00060\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00065\ \ \ \ \ \mbox{\hyperlink{class_compare_nom_a503e00fc8cf312682b0329135d43bba4}{CompareNom}}(\textcolor{keywordtype}{int}*\ p\ =\ \textcolor{keyword}{nullptr})\ :\ ptr(p)\ \{\}}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_compare_nom_a61974f6cd4e31ba1d86d610611d312a7}{operator()}}(\mbox{\hyperlink{class_eleve}{Eleve}}\ e1,\ \mbox{\hyperlink{class_eleve}{Eleve}}\ e2)\{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (ptr)\ ++(*ptr);\textcolor{comment}{//Question\ 5}}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ e1.\mbox{\hyperlink{class_eleve_ac350cce0072485d7424675914851b415}{GetNom}}()<e2.\mbox{\hyperlink{class_eleve_ac350cce0072485d7424675914851b415}{GetNom}}();}
+\DoxyCodeLine{00077\ \ \ \ \ \}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_compare_note_add2ebb37961e3f904a669c29e94c2327}{CompareNote}}\{}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{int}*\ ptr;}
+\DoxyCodeLine{00090\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00095\ \ \ \ \ \mbox{\hyperlink{class_compare_note_add2ebb37961e3f904a669c29e94c2327}{CompareNote}}(\textcolor{keywordtype}{int}*\ p\ =\ \textcolor{keyword}{nullptr})\ :\ ptr(p)\ \{\}}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_compare_note_a2e2bff69feeec5ad8dc04fd34e889895}{operator()}}(\mbox{\hyperlink{class_eleve}{Eleve}}\ e1,\ \mbox{\hyperlink{class_eleve}{Eleve}}\ e2)\{}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (ptr)\ ++(*ptr);\textcolor{comment}{//Question\ 5}}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ e1.\mbox{\hyperlink{class_eleve_a7505567591d82246f9fe8c0281fd81a3}{GetNote}}()>e2.\mbox{\hyperlink{class_eleve_a7505567591d82246f9fe8c0281fd81a3}{GetNote}}();}
+\DoxyCodeLine{00109\ \ \ \ \ \}}
+\DoxyCodeLine{00110\ \};}
+
+\end{DoxyCode}
